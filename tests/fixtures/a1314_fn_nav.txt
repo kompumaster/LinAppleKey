@@ -1,0 +1,10 @@
+# Synthetic A1314 capture: Fn+Left -> Home.
+# The Fn layer is driven by the physical Ctrl key (SwapFnCtrl=1).
+DEVICE test:a1314
+MODEL A1314
+BUS 0005
+IDS 05AC:0256
+0.000 R 9 01 01 00 00 00 00 00 00 00
+0.010 R 9 01 01 00 50 00 00 00 00 00
+0.020 R 9 01 01 00 00 00 00 00 00 00
+0.030 R 9 01 00 00 00 00 00 00 00 00

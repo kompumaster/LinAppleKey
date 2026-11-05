@@ -1,0 +1,32 @@
+# LinAppleKey settings. Install to /etc/linapplekey.conf.
+# Values are read at startup and on SIGHUP.
+# Command-line --no-grab / --no-power override the matching keys.
+
+# Swap the physical Fn and left Ctrl keys (ThinkBook-like layout).
+SwapFnCtrl = 1
+
+# Swap left Option (Alt) and left Command (Super), left side only.
+SwapAltCmd = 1
+
+# One of the right-hand modifiers acts as the context-menu key.
+RightCmdAsMenu = 1
+
+# 1: right Option = menu, right Command = Alt (default)
+# 0: right Command = menu, right Option = Alt
+SwapRightCmdAlt = 1
+
+# Swap the ISO grave/backslash pair to match a PC ISO keyboard.
+SwapGraveBackslash = 1
+
+# 1: Fn+F5 uses "systemctl suspend --no-block"
+# 0: Fn+F5 emits native KEY_SLEEP and the desktop handles it
+# Fn+F6 always uses "systemctl hibernate --no-block": native KEY_SUSPEND
+# is not handled reliably by Linux desktops.
+DirectPowerAction = 0
+
+# 1: exclusive EVIOCGRAB (normal operation)
+# 0: passthrough; physical keyboard only, no injection
+Grab = 1
+
+# 0: ignore Fn+F5 / Fn+F6 completely (recommended while testing)
+PowerKeys = 1

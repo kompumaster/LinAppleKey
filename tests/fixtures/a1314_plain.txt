@@ -1,0 +1,7 @@
+# Synthetic A1314 capture: plain A press/release.
+DEVICE test:a1314
+MODEL A1314
+BUS 0005
+IDS 05AC:0256
+0.000 R 9 01 00 00 04 00 00 00 00 00
+0.010 R 9 01 00 00 00 00 00 00 00 00
